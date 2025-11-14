@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="MusiKeta" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,58 @@
     <link rel="icon" type="image/x-icon" href="/resources/img/favicon.ico">
     <link rel="stylesheet" href="../global/css/style.css">
 </head>
+
 <body>
-    <nav class="bar">
+    <header>
         <div>
             <img src="../resources/img/favicon.ico">
-            <h1>MÚSIK</h1>
+            <h1>MUSIK</h1>
         </div>
-        <div class="buttons">
+        <nav class="buttons">
             <a href="home.html" target="_self">Home</a>
             <a href="detalle.html" target="_self">Detalle</a>
             <a href="festivales.html" target="_self">Festivales</a>
             <a href="alta.html" target="_self">Alta</a>
-        </div>
-    </nav>
-    <form>
-        <legend>ALTA USUARIO</legend>
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" placeholder="Jane" required><br>
-            <label for="surname">Apellido:</label><br>
-            <input type="text" id="surname" placeholder="Doe" required><br>
-            <label for="pronouns">Pronombres: </label><br>
-            <select id="pronouns">
-                <option value="she">She/Her</option>
-                <option value="him">He/Him</option>
-                <option value="they">They/Them</option>
-            </select><br>
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email"  placeholder="janedoe@domain.com" required><br>
-            <label for="date">Fecha de nacimiento:</label><br>
-            <input type="date" id="date" required><br>
-        </fieldset>
-        <fieldset>
-            <legend>Datos Usuario</legend>
-            <label for="user">Nombre de usuario:</label><br>
-            <input type="text" id="user" required><br>
-            <label for="pwd">Constraseña:</label><br>
-            <input type="password" id="pwd" required><br>
-            <label for="pwd">Repetir constraseña:</label><br>
-            <input type="password" id="pwd2" required><br>
-            <label for="avatar">Imagen de perfil:</label><br>
-            <input type="file" id="avatar"><br>
-        </fieldset>
+        </nav>
+    </header>
+    <main id="form">
+        <form>
+            <legend>ALTA USUARIO</legend>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" placeholder="Jane" required><br>
+                <label for="surname">Apellido:</label><br>
+                <input type="text" id="surname" placeholder="Doe" required><br>
+                <label for="pronouns">Pronombres: </label><br>
+                <select id="pronouns">
+                    <option value="she">She/Her</option>
+                    <option value="him">He/Him</option>
+                    <option value="they">They/Them</option>
+                </select><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" placeholder="janedoe@domain.com" required><br>
+                <label for="date">Fecha de nacimiento:</label><br>
+                <input type="date" id="date" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Usuario</legend>
+                <label for="user">Nombre de usuario:</label><br>
+                <input type="text" id="user" required><br>
+                <label for="pwd">Constraseña:</label><br>
+                <input type="password" id="pwd" required><br>
+                <label for="pwd">Repetir constraseña:</label><br>
+                <input type="password" id="pwd2" required><br>
+                <label for="avatar">Imagen de perfil:</label><br>
+                <input type="file" id="avatar"><br>
+            </fieldset>
             <input type="checkbox" id="terms" required>
             <label for="terms">Acepto los <a href="terms.html">términos y condiciones.</a></label><br>
             <input type="checkbox" id="spam">
             <label for="terms">Quiero recibir novedades al correo electrónico.</label><br><br>
             <input type="submit" value="Enviar">
-    </form>
+        </form>
+    </main>
 </body>
+
 </html>
